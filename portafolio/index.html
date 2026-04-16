@@ -1,58 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Jorge Carmona's Portfolio">
-    <meta name="keywords" content="Jorge Carmona, Portfolio">
-    <meta name="author" content="Jorge Carmona">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Jorge Carmona's Portfolio" />
+    <meta name="keywords" content="Jorge Carmona, Portfolio" />
+    <meta name="author" content="Jorge Carmona" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jorge Carmona's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
     <header>
-        <h1>Jorge Carmona</h1>
-        <nav>
-            <a href="#aboutMe">About Me</a>
-            <a href="#proyects">Proyects</a>
-            <a href="#contact">Contact</a>
-            <a href="mascotas.html">Pets</a>
-        </nav>
+      <h1>Jorge Carmona</h1>
+      <nav>
+        <a href="#aboutMe">About Me</a>
+        <a href="#proyects">Proyects</a>
+        <a href="#contact">Contact</a>
+        <a href="mascotas.html">Pets</a>
+      </nav>
     </header>
 
-    <main>
-        <!--About Me Section-->
-        <section class="container">
-            <h2 id="aboutMe">About me</h2>
-            <p>I'm Jorge Carmona, I'm 20 years old and I'm a coding student at Riwi and a mechatronics engineer student at <abbr title="Instituto Universitario de Barranquilla">IUB</abbr>. I'm passionate about technology, cinema, music and animals</p>
-        </section>
+    <main id="mainpage">
+      <!--About Me Section-->
+      <section class="container">
+        <h2 id="aboutMe">About me</h2>
+        <p>
+          I'm Jorge Carmona, I'm 20 years old and I'm a coding student at Riwi
+          and a mechatronics engineer student at
+          <abbr title="Instituto Universitario de Barranquilla">IUB</abbr>. I'm
+          passionate about technology, cinema, music and animals
+        </p>
+      </section>
 
-        <!--Proyect Section-->
-        <section class="container">
-            <h2 id="proyects">Proyects</h2>
-            <ul id="proyects-block">
-                <li><a href="https://github.com/Envy528/Calculator">Basic Python Calculator</a></li>
-                <li><a href="https://github.com/Envy528/mi-pagina-web">My first Web Page</a></li>
-                <li><a href="https://github.com/Envy528/studentGrades_Riwi">Student's Grades Program</a></li>
-            </ul>
-        </section>
+      <!--Proyect Section-->
+      <section class="container">
+        <h2 id="proyects">Proyects</h2>
+        <ul id="proyects-block">
+          <li>
+            <a href="https://github.com/Envy528/Calculator"
+              >Basic Python Calculator</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Envy528/mi-pagina-web"
+              >My first Web Page</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/Envy528/studentGrades_Riwi"
+              >Student's Grades Program</a
+            >
+          </li>
+        </ul>
+      </section>
 
-        <!--Contact Section-->
-        <section class="container">
-            <h2 id="contact">Contact</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
+      <!--Contact Section-->
+      <section class="container">
+        <h2 id="contact">Contact</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+          />
 
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="JohnDoe@gmail.com" required>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="JohnDoe@gmail.com"
+            required
+          />
 
-                <label for="message">Reason of contact:</label><br>
-                <textarea name="message" id="message" required></textarea>
+          <label for="message">Reason of contact:</label><br />
+          <textarea name="message" id="message" required></textarea>
 
-                <button type="submit">Send</button>
-            </form>
-        </section>
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
-</body>
+  </body>
 </html>

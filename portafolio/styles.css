@@ -1,71 +1,121 @@
-html, body, main {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+html,
+body,
+main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-body{
-    background-image: url(/img/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
+body {
+  background-image: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
 }
 
 /* Main block*/
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Header */
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 1rem;
-    /*Line below header*/
-    border-bottom: 2px groove white;
-    margin: 0px 30%;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*Line below header*/
+  border-bottom: 2px groove white;
+  padding-bottom: 1rem;
+  margin: 0px 25%;
 }
 /* Links */
-a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-a:hover{
-    color: goldenrod;
-    text-decoration: underline;
+a:hover {
+  color: goldenrod;
+  text-decoration: underline;
 }
 
 /* Box */
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*Size*/
-    width: 35%;
-    height: auto;
-    /*border and margin*/
-    border: 3px outset white;
-    margin: 3rem 0;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*Size*/
+  width: 35%;
+  height: auto;
+  /*border and margin*/
+  border: 3px outset white;
+  margin: 3rem 0;
+  padding: 1rem;
 }
-.container p{
-    max-width: 80%; 
+.container p {
+  max-width: 80%;
 }
 
-.container h2{
-    margin-top: 1rem;
-    margin-bottom: 0px;
+.container h2 {
+  margin-top: 1rem;
+  margin-bottom: 0px;
 }
-/*Proyectos*/
-#proyects-block{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10%;
+/*Proyect Block*/
+#proyects-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10%;
+}
+
+/*Contact Block*/
+#contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm label,
+button {
+  margin-top: 1rem;
+}
+
+/* Pets main block*/
+#pets-mainpage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/* Pets block*/
+.pets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*Size*/
+  width: fit-content;
+  height: fit-content;
+  /*Borders*/
+  margin: 3rem 2rem;
+  border: 1px solid white;
+}
+
+/*Pets container images*/
+.pets-container img {
+  /*Size*/
+  width: 50%;
+  height: auto;
+  /*Borders*/
+  margin: 2rem;
+  border: 5px outset white;
+  border-radius: 30px;
+}
+/* Pets container articles*/
+.pets-container article {
+  text-align: center;
+  margin: 1rem;
 }
