@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -7,47 +7,60 @@
     <meta name="author" content="Jorge Carmona" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jorge Carmona's Pets</title>
+    <!--Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
   </head>
-  <!--Change later?-->
   <body>
     <header>
       <h1>My pets</h1>
-      <a href="index.html">Go back</a>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
     </header>
     <main id="pets-mainpage">
-      <section class="pets-container">
+      <!--Pets Section-->
+      <figure class="pets-container">
+        <!--Fritanga-->
         <img src="../img/Fritanga.jpeg" alt="Fritanga image" />
-        <article>Fritanga: Fat, Orange and an idiot</article>
-      </section>
-
-      <section class="pets-container">
+        <figcaption>Fritanga: Fat, Orange and an idiot</figcaption>
+      </figure>
+      <figure class="pets-container">
+        <!--Dakota-->
         <img src="../img/Dakota.jpeg" alt="Dakota img" />
-        <article>Dakota: Hyperactive, Black & brown and playful</article>
-      </section>
-
-      <section class="pets-container">
+        <figcaption>
+          Dakota: Hyperactive, getting bigger every second and playful
+        </figcaption>
+      </figure>
+      <figure class="pets-container">
+        <!--Chacarron-->
         <img src="../img/Chacarron.jpeg" alt="Chacarron img" />
-        <article>
+        <figcaption>
           Chacarron: Sleepy head, chonky and very angry (He's a menace)
-        </article>
-      </section>
-
-      <section class="pets-container">
+        </figcaption>
+      </figure>
+      <figure class="pets-container">
+        <!--Laika-->
         <img src="../img/Laika.jpeg" alt="Laika img" />
-        <article>Laika: Lazy, fatty and loud</article>
-      </section>
-
-      <section class="pets-container">
+        <figcaption>Laika: Lazy, fatty and loud</figcaption>
+      </figure>
+      <figure class="pets-container">
+        <!--Bailey-->
         <img src="../img/Bailey.jpeg" alt="Bailey img" />
-        <article>Bailey: Stubborn, loud and chill</article>
-      </section>
-
-      <section class="pets-container">
+        <figcaption>Bailey: Stubborn, loud and chill</figcaption>
+      </figure>
+      <figure class="pets-container">
+        <!--Mailo-->
         <img src="../img/Mailo.jpeg" alt="Mailo img" />
-        <article>Mailo: R.I.P 🙏, the goat itself and a good boy</article>
-      </section>
+        <figcaption>Mailo: R.I.P 🙏, the goat itself and a saint 🙏</figcaption>
+      </figure>
     </main>
+
+    <footer>
+      <p>Page developed by Jorge Carmona</p>
+    </footer>
   </body>
 </html>
